@@ -123,12 +123,12 @@ def Decrypt(string):
             counter = 0
     return newstring
 
-phrase = "Test Phrase for my very unsafe and very basic encrypting machine.\nThis is a newline"
+phrase =  raw_input("Insert Phrase here: ")
 print (phrase)
 encrypted = Encrypt(phrase)
 print (encrypted)
-salted = Salt(encrypted)
-print (salted)
+#salted = Salt(encrypted)
+#print (salted)
 decrypted = Decrypt(encrypted)
 print (decrypted)
 
