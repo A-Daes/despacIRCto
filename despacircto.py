@@ -14,7 +14,8 @@
 ##   message being read, and check for content after the timestamp.
 ##   delete_first_line(file): removes the first line from the queue file.
 ####
-
+def has_timestamp(string):
+    bool(re.search('[0-2][0-9][0-9][0-9]:[0-1][0-9]:[0-3][0-9]:[0-1][0-9]:[0-5][0-9]:[0-5][0-9]', string))
 class Server:
 
     def __init__(self, masterlog, queuelog, queueorderer):
